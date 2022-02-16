@@ -1,0 +1,7 @@
+name: FallenKingdoms
+author: Maël
+version: 1.0
+main: fr.mael.fk.Main
+commands:
+  fk:
+    permission: fk.admin
