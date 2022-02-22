@@ -12,8 +12,6 @@ public class ThunderChange extends FKListener {
 
     @EventHandler
     public void onThunderChange(ThunderChangeEvent event) {
-        if (event.toThunderState()) {
-            event.setCancelled(true);
-        }
+        event.setCancelled(event.toThunderState());
     }
 }
