@@ -15,8 +15,6 @@ public class FoodLevelChange extends FKListener {
 
     @EventHandler
     public void onFoodLevelChange(FoodLevelChangeEvent event) {
-        if (Step.isStep(Step.LOBBY)) {
-            event.setCancelled(true);
-        }
+        event.setCancelled(Step.isStep(Step.LOBBY));
     }
 }
